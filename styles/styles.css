@@ -1,1 +1,161 @@
-/*# sourceMappingURL=styles.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Oswald:wght@300&family=Passion+One:wght@700&family=Poppins&display=swap");
+* {
+  font-family: "Alfa Slab One", cursive;
+  font-family: "Oswald", sans-serif;
+  font-family: "Passion One", cursive;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: rgb(207, 189, 109);
+}
+body nav {
+  background-color: rgb(34, 34, 34);
+  padding: 1.7rem 0px;
+}
+body nav ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+body nav ul li {
+  list-style: none;
+}
+body nav ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 10px;
+}
+body nav ul li a:hover {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.164);
+  transition: background-color, 600ms;
+}
+body header {
+  display: flex;
+  justify-content: center;
+}
+body header h1 {
+  width: 30%;
+  padding: 10px;
+  color: black;
+  text-align: center;
+  background-color: rgb(207, 189, 109);
+  border-radius: 5px;
+  animation: h1-anima ease-in-out 4s infinite;
+}
+@keyframes h1-anima {
+  75% {
+    background-color: rgb(0, 0, 0);
+    color: white;
+  }
+}
+body main {
+  margin: 5px;
+}
+body main p.p-principal {
+  padding: 5px;
+  border: 5px solid black;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px auto;
+  width: 50%;
+  font-size: 18px;
+  font-weight: bolder;
+  transition: padding, background-color, font-size, 2s;
+}
+body main p.p-principal:hover {
+  background-color: white;
+  padding: 7px;
+  font-size: 20px;
+  transition: padding, background-color, font-size, 2s;
+}
+body main article section.Resumen-Personal div {
+  margin: 10px 0px;
+}
+body main article section.Resumen-Personal div p {
+  text-align: center;
+  font-weight: bolder;
+  margin: 10px 0px;
+}
+body main article section.Resumen-Personal div ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+body main article section.Resumen-Personal div ul li {
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  transition: font-size, 2s;
+}
+body main article section.Resumen-Personal div ul li img {
+  margin: 0px 6px;
+  width: 30px;
+  height: 30px;
+  transition: width, height, 1s;
+}
+body main article section.Resumen-Personal div ul li:hover {
+  font-size: 22px;
+  transition: font-size, 2s;
+}
+body main article section.Resumen-Personal div ul li:hover img:hover {
+  width: 40px;
+  height: 40px;
+  transition: width, height, 1s;
+}
+body main article section.Resumen-pasatiempo div p {
+  text-align: center;
+  font-weight: bolder;
+  margin: 5px 0px;
+}
+body main article section.Resumen-pasatiempo div ul {
+  border-radius: 10px;
+  width: 70%;
+  margin: 10px auto;
+  padding: 10px;
+}
+body main article section.Resumen-pasatiempo div ul li {
+  list-style-type: none;
+  margin: 10px 0px;
+}
+body main article section.Resumen-pasatiempo div ul li span {
+  font-weight: bolder;
+}
+body main article section.Formulario {
+  display: flex;
+  justify-content: center;
+}
+body main article section.Formulario form {
+  border: 5px solid black;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0px;
+}
+body main article section.Formulario form label {
+  font-weight: bolder;
+  margin: 5px 0px;
+}
+body main article section.Formulario form input {
+  width: 300px;
+  height: 25px;
+  border: none;
+  border-bottom: 2px solid black;
+  background: none;
+}
+body main article section.Formulario form textarea {
+  width: 300px;
+  border: 2px solid black;
+  outline: none;
+  background: none;
+}
+body main article section.Formulario form button {
+  width: 150px;
+  margin: 10px auto;
+}
+body footer {
+  display: flex;
+  background-color: rgb(34, 34, 34);
+  padding: 1.7rem 0px;
+}/*# sourceMappingURL=styles.css.map */

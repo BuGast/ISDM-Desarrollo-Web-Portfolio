@@ -1,66 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Oswald:wght@300&family=Passion+One:wght@700&family=Poppins&display=swap');
+* {
+    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Passion One', cursive;
+    font-family: 'Poppins', sans-serif;
+}
 body {
+    background: rgb(207, 189, 109);
     nav {
+        background-color: rgb(34, 34, 34);
+        padding: 1.7rem 0px;
         ul {
+            display: flex;
+            justify-content: space-evenly;
             li {
+                list-style: none;
                 a {
-
+                    text-decoration: none;
+                    color: rgb(255, 255, 255);
+                    padding: 10px;
+                    border-radius: 10px;
+                }
+                a:hover {
+                    padding: 10px;
+                    background-color: rgba(255, 255, 255, 0.164);
+                    transition: background-color, 600ms;
                 }
             }
         }
     }
-    main {
+    header {
+        display: flex;
+        justify-content: center;
         h1 {
-
+            width: 30%;
+            padding: 10px;
+            color: black;
+            text-align: center;
+            background-color: rgb(207, 189, 109);
+            border-radius: 5px;
+            animation: h1-anima ease-in-out 4s infinite ;
         }
-        p {
+        @keyframes h1-anima {
+            25% {
+            }
+            50% {
 
+            }
+            75% {
+                background-color: rgb(0, 0, 0);
+                color: white;
+            }
+            100% {
+
+            }
+        }
+    }
+    main {
+        margin: 5px;
+        p.p-principal {
+            padding: 5px;
+            border: 5px solid black;
+            border-radius: 10px;
+            text-align: center;
+            margin: 10px auto;
+            width: 50%;
+            font-size: 18px;
+            font-weight: bolder;
+            transition: padding,background-color,font-size, 2s;
+        }
+        p.p-principal:hover {
+            background-color: white;
+            padding: 7px;
+            font-size: 20px;
+            transition: padding,background-color,font-size, 2s;
         }
         article {
-            section {
+            section.Resumen-Personal {
                 p {
 
                 }
                 div {
+                    margin: 10px 0px;
                     p {
-
+                        text-align: center;
+                        font-weight: bolder;
+                        margin: 10px 0px;
                     }
                     ul {
+                        display: flex;
+                        justify-content: space-evenly;
                         li {
-
+                            font-weight: bolder;
+                            display: flex;
+                            align-items: center;
+                            list-style-type: none;
+                            transition: font-size,2s;
+                            img {
+                                margin: 0px 6px;
+                                width: 30px;
+                                height: 30px;
+                                transition: width, height, 1s;
+                            }
                         }
-                    }
-                }
-            }
-            section {
-                p {
-
-                }
-                div {
-                    p {
-
-                    }
-                    ul {
-                        li {
-                            span {
-
+                        li:hover {
+                            font-size: 22px;
+                            transition: font-size,2s;
+                            img:hover {
+                                width: 40px;
+                                height: 40px;
+                                transition: width, height, 1s;
                             }
                         }
                     }
                 }
             }
-            section {
-                form {
-                    label {
+            section.Resumen-pasatiempo {
+                p {
 
+                }
+                div {
+                    p {
+                        text-align: center;
+                        font-weight: bolder;
+                        margin: 5px 0px;
+                    }
+                    ul {
+                        border-radius: 10px;
+                        width: 70%;
+                        margin: 10px auto;
+                        padding: 10px;
+                        li {
+                            list-style-type: none;
+                            margin: 10px 0px;                            span {
+                                font-weight: bolder;
+                            }
+                        }
+                    }
+                }
+            }
+            section.Formulario {
+                display: flex;
+                justify-content: center;
+                form {
+                    border: 5px solid black;
+                    padding: 5px;
+                    display: flex;
+                    flex-direction: column;
+                    margin: 5px 0px;
+                    label {
+                        font-weight: bolder;
+                        margin: 5px 0px;
                     }
                     input {
-
+                        width: 300px;
+                        height: 25px;
+                        border: none;
+                        border-bottom: 2px solid black;
+                        background: none;
                     }
                     textarea {
-
+                        width: 300px;
+                        border: 2px solid black;
+                        outline: none;
+                        background: none;
                     }
                     button {
-
+                        width: 150px;
+                        margin: 10px auto;
                     }
                 }
             }
@@ -68,6 +175,9 @@ body {
         }
     }
     footer {
+        display: flex;
+        background-color: rgb(34, 34, 34);
+        padding: 1.7rem 0px;
         p {
 
         }
