@@ -97,6 +97,7 @@ body {
                     ul {
                         display: flex;
                         justify-content: space-evenly;
+                        flex-wrap: wrap;
                         margin-bottom: 10px;
                         li {
                             font-weight: bolder;
@@ -256,4 +257,7 @@ body {
             }
         }
     }
+}
+@media screen and (max-width: 600px){
+    // Si me sobra tiempo realizo el media screen y correcciones de optimizacion asi como los comentarios respectivos al codigo.
 }

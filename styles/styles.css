@@ -93,6 +93,7 @@ body main article section.Resumen-Personal div p {
 body main article section.Resumen-Personal div ul {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   margin-bottom: 10px;
 }
 body main article section.Resumen-Personal div ul li {
