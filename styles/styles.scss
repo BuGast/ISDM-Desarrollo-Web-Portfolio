@@ -132,9 +132,15 @@ body {
                         padding: 10px;
                         li {
                             list-style-type: none;
-                            margin: 10px 0px;                            span {
+                            margin: 15px 0px;
+                            transition: background, border, 400ms;       
+                            span {
                                 font-weight: bolder;
                             }
+                        }
+                        li:hover {
+                            background: rgba(255, 255, 255, 0.452);
+                            border-bottom: 3px solid black;
                         }
                     }
                 }
@@ -143,11 +149,20 @@ body {
                 display: flex;
                 justify-content: center;
                 form {
+                    background: rgb(110, 110, 110);
+                    color: white;
                     border: 5px solid black;
-                    padding: 5px;
+                    border-radius: 10px;
+                    padding: 10px;
                     display: flex;
                     flex-direction: column;
-                    margin: 5px 0px;
+                    margin: 2px 0px 40px 0px;
+                    h2 {
+                        text-align: center;
+                        color: black;
+                        font-weight: bolder;
+                        font-size: 30px;
+                    }
                     label {
                         font-weight: bolder;
                         margin: 5px 0px;
@@ -159,15 +174,37 @@ body {
                         border-bottom: 2px solid black;
                         background: none;
                     }
+                    input::placeholder {
+                        color: white;
+                    }
                     textarea {
+                        color: white;
+                        padding: 2px;
                         width: 300px;
+                        height: 150px;
                         border: 2px solid black;
                         outline: none;
                         background: none;
+                        resize: none;
+                    }
+                    textarea::placeholder {
+                        color: white;
                     }
                     button {
-                        width: 150px;
+                        width: 100px;
+                        padding: 5px;
                         margin: 10px auto;
+                        border: none;
+                        border-bottom: 3px solid black;
+                        background: rgb(110, 110, 110);
+                        transition: border,color,font-weight, 1s;
+
+                    }
+                    button:hover {
+                        color: white;
+                        font-weight: bolder;
+                        border-bottom: 3px solid white;
+                        transition: border,color,font-weight, 1s;
                     }
                 }
             }
@@ -177,13 +214,27 @@ body {
     footer {
         display: flex;
         background-color: rgb(34, 34, 34);
-        padding: 1.7rem 0px;
+        padding: 12px 0px;
+        justify-content: space-around;
+        align-items: center;
         p {
-
+            width: 35%;
+            color: white;
         }
         div {
+            display: flex;
             img {
-
+                width: 50px;
+                height: 50px;
+                margin: 0px 25px;
+                filter: drop-shadow(4px 3px 13px rgba(255, 255, 255, 0.473));
+                transition: width, height, 1s;
+            }
+            img:hover {
+                width: 72px;
+                height: 72px;
+                transition: width, height, 1s;
+                filter: none;
             }
         }
     }

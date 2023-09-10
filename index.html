@@ -13,9 +13,9 @@
 
     <nav>
         <ul>
-            <li><a href="">Resumen Personal</a></li>
-            <li><a href="">Resumen Pasatiempo</a></li>
-            <li><a href="">Formulario</a></li>
+            <li><a href="#r-personal">Resumen Personal</a></li>
+            <li><a href="#r-pasatiempo">Resumen Pasatiempo</a></li>
+            <li><a href="#formulario">Formulario</a></li>
         </ul>
     </nav>
     <header>
@@ -26,7 +26,7 @@
             ¡Hola! Mi nombre es Gastón Camu, tengo 21 años y estoy a punto de graduarme como Analista en Sistemas. Me apasiona esta disciplina, especialmente el desarrollo front-end, y estoy muy interesado en profundizar mis conocimientos en este campo.
         </p>
         <article>
-            <section class="Resumen-Personal">
+            <section class="Resumen-Personal" id="r-personal">
                 <p>Estoy a punto de completar mi carrera como Analista en Sistemas, y durante este proceso, he tenido la oportunidad de sumergirme en un amplio espectro de tecnologías y conceptos que han ampliado mi comprensión del mundo de la programación y la informática. Desde los fundamentos hasta temas avanzados como seguridad informática y desarrollo de software, he adquirido un conjunto diverso de habilidades que espero aplicar en proyectos desafiantes en el futuro. Mi formación me ha preparado para abrazar con entusiasmo las oportunidades que el campo de la tecnología de la información tiene para ofrecer en mi próxima etapa profesional.</p>
                 <div>
                     <p>Durante este período, he aprendido tecnologías como:</p>
@@ -45,7 +45,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="Resumen-pasatiempo">
+            <section class="Resumen-pasatiempo" id="r-pasatiempo">
                 <P>Mis pasatiempos abarcan una amplia gama de actividades que llenan mi tiempo libre con diversión y satisfacción. Cada uno de ellos representa una faceta única de mi personalidad y me permite explorar diferentes aspectos de la vida.</P>
                 <div>
                     <p>A continuación, detallaré estos pasatiempos que tanto disfruto:</p>
@@ -58,14 +58,15 @@
                     </ul>
                 </div>
             </section>
-            <section class="Formulario">
+            <section class="Formulario" id="formulario">
                 <form action="">
+                    <h2>FORMULARIO</h2>
                         <label for="">Nombre y Apellido:</label>
                         <input type="text" placeholder="Gastón Camú" required>
                         <label for="">Correo:</label>
                         <input type="email" placeholder="example@gmail.com" required>
                         <label for="mensaje">Mensaje:</label>
-                        <textarea required name="mensaje" cols="30" rows="10"></textarea>
+                        <textarea placeholder="Hola, necesito ponerme en contacto contigo." required name="mensaje"></textarea>
                         <button type="submit">ENVIAR</button>
                 </form>
             </section>
@@ -75,9 +76,15 @@
     <footer>
         <p>Este proyecto representa la creación de mi portafolio web en formato de una sola página (one-page). Espero que encuentre satisfacción al explorar mi trabajo y experiencia en el desarrollo web. Estoy emocionado por compartirlo con usted.</p>
         <div>
-            <img src="" alt="Facebook">
-            <img src="" alt="Linkedin">
-            <img src="" alt="GitHub">
+            <a target="_blank" href="https://web.whatsapp.com/">
+                <img src="./assets/img/logo whatsapp.webp" alt="Whatsapp">
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/gaston-camu/">
+                <img src="./assets/img/logo linkedin.png" alt="Linkedin">
+            </a>
+            <a href="https://github.com/BuGast">
+                <img src="./assets/img/logo github.png" alt="GitHub">
+            </a>
         </div>
     </footer>
 
