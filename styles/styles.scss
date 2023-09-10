@@ -77,19 +77,27 @@ body {
         }
         article {
             section.Resumen-Personal {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 p {
-
+                    margin: 30px 0px;
+                    width: 80%;
+                    text-align: center;
                 }
                 div {
-                    margin: 10px 0px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
                     p {
                         text-align: center;
                         font-weight: bolder;
-                        margin: 10px 0px;
+                        margin: 25px 0px 20px 0px;
                     }
                     ul {
                         display: flex;
                         justify-content: space-evenly;
+                        margin-bottom: 10px;
                         li {
                             font-weight: bolder;
                             display: flex;
@@ -97,7 +105,7 @@ body {
                             list-style-type: none;
                             transition: font-size,2s;
                             img {
-                                margin: 0px 6px;
+                                margin: 0px 7px;
                                 width: 30px;
                                 height: 30px;
                                 transition: width, height, 1s;
@@ -116,14 +124,22 @@ body {
                 }
             }
             section.Resumen-pasatiempo {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 p {
-
+                    text-align: center;
+                    width: 80%;
+                    margin: 5px 0px;
                 }
                 div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
                     p {
                         text-align: center;
                         font-weight: bolder;
-                        margin: 5px 0px;
+                        margin-top: 15px;
                     }
                     ul {
                         border-radius: 10px;
@@ -168,6 +184,7 @@ body {
                         margin: 5px 0px;
                     }
                     input {
+                        color: white;
                         width: 300px;
                         height: 25px;
                         border: none;
@@ -218,8 +235,9 @@ body {
         justify-content: space-around;
         align-items: center;
         p {
-            width: 35%;
+            width: 36%;
             color: white;
+            font-size: 14px;
         }
         div {
             display: flex;
